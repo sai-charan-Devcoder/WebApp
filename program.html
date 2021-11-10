@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    function validate(){
+        var name=document.getElementById("name");
+        var email=document.getElementById("email");
+        var query=document.getElementById("query");
+       
+    if(name.value==""||email.value==""||query.value=="")
+    {
+     window.alert("Please fill the details");
+    }
+    else{
+    window.alert("click on the contact us tab for more details");
+    }
+}
+        
+        </script> 
+    
+    </head>
+    <body>
+        <nav>
+        <div class="logo">Associate Program</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Associate Training Program</a></li>
+                <li><a href="https://www.triconinfotech.com/contact-us/">Contact us</a></li>
+            </ul>
+            </nav>
+             
+<div class="parent2">
+    <div class="child2">
+        <div id="error"></div>
+    <form onSubmit="validate()" action="">   
+       <label for="name">Name:</label><input id="name" type="text" name="name" placeholder="name"/>
+        <label for="email">Email:</label><input id="email" type="text" name="email" placeholder="email"/>
+        <label for="query">Query:</label><input id="query" type="text" name="query" placeholder="query"/>
+        <br><br><button type="submit" > Submit</button>
+    </form>
+    </div>
+</div>
+</div>
+
+
+<div class="social-links">
+<img src="linkedin.png">
+<img src="facebook.jpeg">
+</div>
+
+
+    </body>
+</html>
